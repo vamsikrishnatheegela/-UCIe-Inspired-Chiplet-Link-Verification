@@ -1,5 +1,8 @@
 # Verification Plan
 
+**Author and Maintainer:** Vamsi Krishna Theegela  
+**Repository:** [UCIe-Inspired-Chiplet-Link-Verification](https://github.com/vamsikrishnatheegela/-UCIe-Inspired-Chiplet-Link-Verification)
+
 ## 1. Objective
 
 Verify the UCIe-inspired link controller, packet channel, and integrated design for state transitions, packet integrity, backpressure, recovery, fatal faults, reset behavior, and assertion checking.
@@ -77,11 +80,15 @@ These counters demonstrate exercised scenarios, not exhaustive state or transiti
 
 Normal regression:
 
-    make clean && make
+```bash
+make clean && make
+```
 
 Negative assertion tests:
 
-    make sva-negative
+```bash
+make sva-negative
+```
 
 ## 8. Exit criteria
 
