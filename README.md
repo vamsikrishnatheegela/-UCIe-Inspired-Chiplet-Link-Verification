@@ -1,8 +1,12 @@
 # UCIe-Inspired Chiplet Link Verification
 
+**Author and Maintainer:** Vamsi Krishna Theegela  
+**GitHub:** [vamsikrishnatheegela](https://github.com/vamsikrishnatheegela)  
+**Repository:** [UCIe-Inspired-Chiplet-Link-Verification](https://github.com/vamsikrishnatheegela/-UCIe-Inspired-Chiplet-Link-Verification)
+
 A SystemVerilog RTL and verification project modeling selected behaviors of a chiplet-to-chiplet link. The focus is link-state management, packet transfer, backpressure, recovery, fatal faults, and assertion-based verification.
 
-> Scope: This is an educational UCIe-inspired prototype, not a complete UCIe implementation or compliance suite.
+> **Scope:** This is an educational UCIe-inspired prototype, not a complete UCIe implementation or compliance suite.
 
 ## Architecture
 
@@ -51,25 +55,38 @@ These are recorded development results. Re-run the regression to verify the curr
 - GNU Make
 - C++ compiler and standard build tools
 
+## Clone
+
+```bash
+git clone https://github.com/vamsikrishnatheegela/-UCIe-Inspired-Chiplet-Link-Verification.git
+cd -- -UCIe-Inspired-Chiplet-Link-Verification
+```
+
 ## Run the tests
 
 Normal regression:
 
-    make clean && make
+```bash
+make clean && make
+```
 
 Negative assertion tests:
 
-    make sva-negative
+```bash
+make sva-negative
+```
 
 Individual targets:
 
-    make controller
-    make packet
-    make edges
-    make integration
-    make random
-    make faultstress
-    make back-to-back
+```bash
+make controller
+make packet
+make edges
+make integration
+make random
+make faultstress
+make back-to-back
+```
 
 ## Limitations
 
